@@ -3,3 +3,5 @@
 original_eda*
 graph_viz_datasci205_project3.ipynb
 neo4j_data_load_sample.py
+*.pdf
+**/.DS_Store
