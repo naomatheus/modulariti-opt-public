@@ -8,6 +8,7 @@ The project demonstrates how network science techniques can reveal hidden relati
 ## Contents
 - `mod-opt/eda_modularity_opt_cuda.ipynb`: Initial data exploration and preprocessing notebook
 - `mod-opt/Analysis_Modularity_Opt_CUDA.ipynb`: Core analysis implementing community detection algorithms and portfolio optimization
+- `mod-opt/time_series_focus_modularity_opt.ipynb`: Time Series analysis and Portfolio Allocation Strategy with modularity optimized financial time series
 
 ## Key Features
 
@@ -29,6 +30,14 @@ The project demonstrates how network science techniques can reveal hidden relati
 - Volatility-based filtering for rapid identification of risk concentrations
 - Time-series analysis of community stability and change
 
+### Time Series Analysis & Portfolio Implementation
+- Complex time series analysis using modularity-optimized community data
+- Autoregressive Integrated Moving Average (ARIMA) model evaluation and selection 
+- Individual stock characteristic analysis within optimized community framework
+- Implementation of systematic Community Rotation strategy for portfolio management
+- Implements a portfolio allocation strategy
+- Leverages risk-adjusted community scores and periodically rebalances simulation portfolio
+
 ## Notebook Details
 
 The `Analysis_Modularity_Opt_CUDA.ipynb` notebook contains the implementation of our community detection approach to portfolio optimization. In this notebook, you'll find:
@@ -42,13 +51,22 @@ The `Analysis_Modularity_Opt_CUDA.ipynb` notebook contains the implementation of
 
 This notebook builds upon the exploratory data analysis from Part 1 (`eda_modularity_opt_cuda.ipynb`) and transforms the engineered features into actionable investment insights through the application of network science to aid human and algorithmic decision making. The approach is particularly valuable in today's high-volatility market environment where risk concentrations and potential opportunities emerge uniquely across market segments.
 
+The `time_series_focus_modularity_opt.ipynb` notebook contains the implementation of my time series analysis and portfolio management approach using community-optimized data. In this notebook, you'll find:
+
+1. ARIMA model evaluation and selection demonstrating different memory structures across individual stocks (AAPL vs BAIDU)
+2. Implementation of the Community Rotation Strategy
+3. Risk-adjusted community scoring mechanisms for the portfolio allocation strategy
+
+This notebook builds upon the community detection analysis from Part 2 (`Analysis_Modularity_Opt_CUDA.ipynb`) and transforms the identified community structures into actionable portfolio management strategies. 
+
 ## Technologies
 - CUDA: GPU acceleration for network analysis
 - Polars: High-performance DataFrame operations
 - NetworkX/CDLib: Community detection algorithms
 - Python data visualization tools
+- `statsmodels`: Python implementation of statistical modeling and evaluation algorithms
 
 This repository demonstrates how advanced network analysis techniques can transform financial data analysis during periods of market uncertainty. GPU acceleration techniques make the software side of realizing this project entirely feasible, and this particular implementation enables real-time analysis of complex network structures that would be computationally prohibitive with traditional processing methods.
 
-By revealing underlying community structures that traditional sector-based or factor-based aggregations often miss. This approach provides a more high-level understanding of market dynamics and still allows very granular drill down. The interplay between volatility and stability across different stock communities offers superior diversification opportunities when market correlations shift unexpectedly. This combination of network science and high-performance computing empowers financial professionals to construct more resilient portfolios regardless of prevailing market conditions.
+By revealing underlying community structures that traditional sector-based or factor-based aggregations often miss. This approach provides a more high-level understanding of market dynamics and still allows very granular drill down. There is evidence that the interplay between volatility and stability across different stock communities can offer superior diversification opportunities when market correlations shift unexpectedly. With combinations of network science and high-performance computing financial professionals can build more resilient portfolios regardless of prevailing market conditions.
 
